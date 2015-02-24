@@ -1,0 +1,13 @@
+<html>
+   <body>
+       <p><h1>{{ greeting }}<h1></p><br>
+       <ul>Get parameters:
+       {% for param in get_params %}
+           <li>param[0]: param[1]</li>
+       </ul>
+       <ul>Post parameters: 
+       {% for param in post_params %}
+           <li>param[0]: param[1]</li>
+       </ul>
+   </body>
+</html>
