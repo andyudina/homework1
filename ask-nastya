@@ -13,7 +13,7 @@ server {
         proxy_pass http://backend;
     }
 
-    location /uploads/ {
+    location ^~ /uploads/ {
         root /home/nastya/ask_nastya/uploads;
         expires 7d;
     }
